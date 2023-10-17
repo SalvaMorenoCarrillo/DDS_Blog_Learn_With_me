@@ -1,6 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import { useContext } from 'react';
+const user = useContext(authContext);
+
 ---
 
 <header>
@@ -15,7 +18,7 @@ import { SITE_TITLE } from '../consts';
 		</div>
 		<div class="social-links">
 	
-			<a href="https://github.com/withastro/astro" target="_blank">
+			<a href="https://github.com/SalvaMorenoCarrillo/DDS_Blog_Learn_With_me" target="_blank">
 				<span class="sr-only">Go to Astro's GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
